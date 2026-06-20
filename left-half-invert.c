@@ -3,10 +3,9 @@
 int main()
 {
     int i, j, n = 5;
-    // astric print
-    for (i = 1; i <= n; i++)
+    for (i = n; i >= 1; i--)
     {
-        for (j = 0; j < i; j++)
+        for (j = i; j > 0; j--)
         {
             printf("*");
         }
@@ -16,7 +15,7 @@ int main()
     printf("\n");
 
     // Numbers
-    for (i = 1; i <= n; i++)
+    for (i = n; i >= 1; i--)
     {
         for (j = 1; j <= i; j++)
         {
@@ -28,7 +27,7 @@ int main()
     printf("\n");
 
     // Alphabets
-    for (i = 1; i <= n; i++)
+    for (i = n; i >= 1; i--)
     {
         for (j = 1; j <= i; j++)
         {
@@ -36,4 +35,6 @@ int main()
         }
         printf("\n");
     }
+
+    return 0;
 }

@@ -2,29 +2,31 @@
 
 int main()
 {
-    int i, j, k, n = 5;
+    int i, j, n = 5;
 
     // ASTRIC
     for (i = n; i >= 1; i--)
     {
-        for (j = i; j > 0; j--)
+        for (j = n; j > i; j--)
         {
             printf(" ");
         }
-        for (k = 6 - i; k > 0; k--)
+
+        for (j = 1; j <= i; j++)
         {
             printf("*");
         }
+
         printf("\n");
     }
 
     printf("\n");
 
     // NUMBERS
-    for (i = 1; i <= n; i++)
+    for (i = n; i >= 1; i--)
     {
-        // spaces (this makes it RIGHT aligned)
-        for (j = i; j < n; j++)
+        // spaces
+        for (j = n; j > i; j--)
         {
             printf(" ");
         }
@@ -41,15 +43,15 @@ int main()
     printf("\n");
 
     // ALPHABETS
-    for (i = 1; i <= n; i++)
+    for (i = n; i >= 1; i--)
     {
         // spaces
-        for (j = i; j < n; j++)
+        for (j = n; j > i; j--)
         {
             printf(" ");
         }
 
-        // letters
+        // alphabets
         for (j = 1; j <= i; j++)
         {
             printf("%c", 'A' + j - 1);
